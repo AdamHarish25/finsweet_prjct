@@ -6,7 +6,7 @@ export const Navbar = () =>
 
 {
     const className = {
-        container: "inset-x-0 fixed top-0 bg-[#1C1E53] text-white flex items-center justify-between py-8 px-10 font-Poppins ",
+        container: "w-screen fixed top-0 bg-[#1C1E53] text-white flex items-center justify-between py-8 px-10 font-Poppins ",
         logo: "h-5",
         list1: "gap-14 flex items-center list-none ",
         list2: "flex items-center gap-7 list-none",
@@ -22,7 +22,7 @@ export const Navbar = () =>
                     <ul className={className.list2}>
                         {
                             DataStorage.navbar.menus.map((data, index) => (
-                                <li className='hover:font-bold' key={index}>
+                                <li className='hover:font-bold transition-all duration-200' key={index}>
                                     <Link to={ data.link }>{ data.title }</Link>
                                 </li>
                             ))
