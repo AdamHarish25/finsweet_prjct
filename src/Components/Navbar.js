@@ -30,7 +30,7 @@ export const Navbar = () =>
                     </ul>
                 </li>
                 <li>
-                    <Link className={className.button} to="/ContactUs">
+                    <Link className={className.button} to="/Contact">
                         Contact Us
                     </Link>
                 </li>

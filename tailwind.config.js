@@ -32,6 +32,9 @@ module.exports = {
       gridTemplateRows: {
         SL: "auto 1fr",
       },
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+      }
     },
   },
   plugins: [],

@@ -4,7 +4,7 @@ import Home from './Routes/Home';
 
 function App() {
   return (
-    <div id="App" className='overflow-x-hidden'>
+    <div id="App" className='overflow-hidden'>
       <Home />
       
       <Navbar/>
