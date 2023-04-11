@@ -5,7 +5,7 @@ import { DataStorage } from "../../Datas/DataStorage";
 
 const HomeP_3 = () => {
     const classname = {
-        container: "w-screen h-screen py-10 px-20 space-y-5 font-Poppins",
+        container: "w-screen h-screen py-10 px-20 my-10 space-y-5 font-Poppins",
         topbar: "flex justify-between items-center",
         Link: "flex items-center gap-3 hover:gap-5 transform duration-300 w-fit",
         topbarTitle: "text-4xl font-bold",

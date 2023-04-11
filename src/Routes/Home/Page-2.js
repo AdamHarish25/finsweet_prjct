@@ -4,7 +4,7 @@ import { DataStorage } from '../../Datas/DataStorage';
 
 const HomeP_2 = () => {
     const classname = {
-        container: "w-screen h-screen flex items-center font-Poppins",
+        container: "w-screen h-screen flex items-center font-Poppins bg-[#F4F6FC]",
         box1: "w-full pl-20 py-10 h-full flex flex-col items-start justify-center gap-5",
         link: "flex items-center gap-3 hover:gap-5 transform duration-200 text-[#2405F2]",
         box2: "w-full grid grid-cols-2 gap-4 pr-24",
