@@ -13,6 +13,9 @@ import icon4 from '../Attachments/Images/CardIcons/Icon-4.svg';
 import icon5 from '../Attachments/Images/CardIcons/Icon-5.svg';
 import icon6 from '../Attachments/Images/CardIcons/Icon-6.svg';
 
+import person1 from '../Attachments/Images/person1.jpg'
+import person2 from '../Attachments/Images/person2.jpg'
+
 
 const DataStorage = {
     navbar: {
@@ -123,8 +126,37 @@ const DataStorage = {
             {
                 feedback: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
                 client: "Jenny Wilson",
-                position: "Vice President"
+                photo: person1,
+                position: "Vice President",
             },
+            {
+                feedback: '"I’ve been through much agencies and this one yet is the best for me!"',
+                client: "Sammy Smith",
+                photo: person2,
+                position: "Head of Secretary",
+            }
+        ],
+        page6Accordion: [
+            {
+                question: "How much time does it take?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                question: "What is your class naming convention?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            },
+            {
+                question: "How do you communicate?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            },
+            {
+                question: "I have a bigger project. Can you handle it?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            },
+            {
+                question: "What is your class naming convention?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
         ]
     },
 }

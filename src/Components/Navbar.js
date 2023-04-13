@@ -6,7 +6,7 @@ export const Navbar = () =>
 
 {
     const className = {
-        container: "w-screen fixed top-0 bg-[#1C1E53] text-white flex items-center justify-between py-8 px-10 font-Poppins ",
+        container: "w-screen fixed top-0 bg-[#1C1E53] text-white flex items-center justify-between py-8 px-10 font-Poppins z-50",
         logo: "h-5",
         list1: "gap-14 flex items-center list-none ",
         list2: "flex items-center gap-7 list-none",

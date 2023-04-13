@@ -1,0 +1,45 @@
+/* FaqAccordion.css */
+
+.faq-accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgb(173, 173, 173);
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.question{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.index{
+  font-size: large;
+  color: #2405F2;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.faq-answer {
+  padding: 10px 50px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Set a maximum height or adjust as needed */
+}
