@@ -33,7 +33,7 @@ module.exports = {
         SL: "auto 1fr",
       },
       backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'formBG': "url('./Attachments/Images/formBG.png')",
       }
     },
   },

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./FaqAccordion.css"; // Import your CSS file for styling
-import {HiOutlineX, HiPlus, HiX, } from 'react-icons/hi'
+import "./FaqAccordion.css";
+import {HiPlus, HiX} from 'react-icons/hi'
 
 const FaqAccordion = ({ faqs }) => {
     const [ activeIndex, setActiveIndex ] = useState(null);

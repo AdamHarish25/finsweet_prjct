@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px; /* Adjust height as needed */
+  height: 300px; 
   overflow: hidden;
 }
 
@@ -12,25 +12,30 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Adjust transition properties as needed */
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
   
 }
 
 .carousel-item.active {
   opacity: 1;
+  z-index: 1;
 }
 
 .carousel-item.inactive {
   opacity: 0;
+  z-index: -1;
 }
 
 .button-box {
+  z-index: 3;
   position: absolute;
   right: 4rem;
   bottom: 0;
   display: flex;
   align-items: center;
   gap: 13px;
+  padding: 10px 0px;
 }
 
 .button-box button{
@@ -41,8 +46,10 @@
   place-items: center;
 	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
   transition-duration: 150ms;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  
 }
 
 .left-button.active{
@@ -53,4 +60,36 @@
 .right-button.active{
   background-color: #5239FA;
   color: white;
+}
+
+.card{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+
+.feedback{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.profilePic{
+  height: 3rem;
+  border-radius: 9999px;
+}
+
+.personTitle{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.personInfo{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 10px 0px;
 }

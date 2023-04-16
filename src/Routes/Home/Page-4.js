@@ -14,7 +14,7 @@ const HomeP_4 = () => {
 
     };
 
-    var cardlist = DataStorage.home.page4Cards
+    var Data = DataStorage.home.page4Cards
 
     return (
         <div className={className.container}>
@@ -27,8 +27,8 @@ const HomeP_4 = () => {
                 </h1>
             </div>
             <div className={className.cardBox}>
-                { cardlist.map((data, index) => (
-                    <div className={className.card}>
+                { Data.map((data, index) => (
+                    <div key={index} className={className.card}>
                         <img className='w-8' src={ data.icon } alt=''/>
                         <h1 className={className.cardTitle}>
                             { data.title }

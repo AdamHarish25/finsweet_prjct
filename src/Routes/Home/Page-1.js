@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import vector from '../../Attachments/Images/homeVector.svg';
-import { AiOutlineSwapRight } from 'react-icons/ai'
+import { FaArrowRight } from 'react-icons/fa';
 
 const HomeP_1 = () => {
     const classname = {
@@ -24,12 +24,12 @@ const HomeP_1 = () => {
                 </p>
                 <div className={ classname.buttonBox }>
                     <Link className='px-10 py-6 bg-[#FCD980] rounded-full text-black'>View our work</Link>
-                    <Link className='flex items-center gap-2' to="/Pricing">View Pricing <AiOutlineSwapRight /> </Link>
+                    <Link className='flex items-center gap-2' to="/Pricing">View Pricing <FaArrowRight/></Link>
                 </div>
             </div>
 
             <div className={ classname.imageBox }>
-                <img src={ vector } alt="A vector-like Image" />
+                <img src={ vector } alt="A vector-like Img" />
             </div>
         </div>  
     )
