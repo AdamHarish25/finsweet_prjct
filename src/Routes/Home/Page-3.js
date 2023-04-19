@@ -25,7 +25,7 @@ const HomeP_3 = () => {
                     View our Projects
                 </h1>
 
-                <Link className={classname.Link} to={`/Works`}>
+                <Link className={classname.Link} to={`/Work`}>
                     View more <FaArrowRight/>
                 </Link>
             </div>
@@ -40,7 +40,7 @@ const HomeP_3 = () => {
                             {Data.card1.subtitle}
                         </p>
 
-                        <Link to={`/Works`} className={`${classname.Link} text-yellow-500 text-sm my-10`}>
+                        <Link to={`/Work`} className={`${classname.Link} text-yellow-500 text-sm my-10`}>
                             View projects <FaArrowRight/>
                         </Link>
                     </div>
@@ -52,7 +52,7 @@ const HomeP_3 = () => {
                             <h1 className="text-2xl font-medium">
                                 { Data.card2.title }
                             </h1>
-                            <Link to={ `/Works` } className={ `${ classname.Link } text-yellow-500 text-sm my-3` }>
+                            <Link to={ `/Work` } className={ `${ classname.Link } text-yellow-500 text-sm my-3` }>
                                 View portfolio <FaArrowRight />
                             </Link>
                         </div>

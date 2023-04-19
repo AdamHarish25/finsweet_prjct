@@ -23,6 +23,8 @@ import blogCard3 from "../Attachments/Images/blogCard/card3.png";
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
+import StepbarVector from '../Attachments/Images/StepBar.svg'
+
 
 const DataStorage = {
   navbar: {
@@ -71,6 +73,35 @@ const DataStorage = {
       {
         icon: <FaLinkedin />,
         link: "https://Linkedin.com",
+      },
+    ],
+  },
+
+  bottomBar: {
+    menus: [
+      {
+        title: "Home",
+        link: "/",
+      },
+      {
+        title: "About Us",
+        link: "/About",
+      },
+      {
+        title: "Features",
+        link: "/Features",
+      },
+      {
+        title: "Pricing",
+        link: "/Pricing",
+      },
+      {
+        title: "FAQ",
+        link: "/Faq",
+      },
+      {
+        title: "Blog",
+        link: "/Blog",
       },
     ],
   },
@@ -244,6 +275,50 @@ const DataStorage = {
         link: "/post3",
         image: blogCard3,
         datePosted: "23 Mar 2023",
+      },
+    ],
+  },
+  about: {
+    page3Stepbar: [
+      {
+        title: "Planning",
+        subtitle: (
+          <>
+            Lorem ipsum dolor sit amet,
+            <br /> consetetur sadipscing elitr.
+          </>
+        ),
+        img: StepbarVector
+      },
+      {
+        title: "Conception",
+        subtitle: (
+          <>
+            Lorem ipsum dolor sit amet,
+            <br /> consetetur sadipscing elitr.
+          </>
+        ),
+        img: StepbarVector
+      },
+      {
+        title: "Design",
+        subtitle: (
+          <>
+            Lorem ipsum dolor sit amet,
+            <br /> consetetur sadipscing elitr.
+          </>
+        ),
+        img: StepbarVector
+      },
+      {
+        title: "Development",
+        subtitle: (
+          <>
+            Lorem ipsum dolor sit amet,
+            <br /> consetetur sadipscing elitr.
+          </>
+        ),
+        img: StepbarVector
       },
     ],
   },

@@ -4,7 +4,7 @@ import { DataStorage } from '../../Datas/DataStorage';
 
 const HomeP_2 = () => {
     const classname = {
-        container: "w-screen h-screen flex items-center font-Poppins bg-[#F4F6FC]",
+        container: "w-screen h-screen flex items-center font-Poppins bg-light-creme",
         box1: "w-full pl-20 py-10 h-full flex flex-col items-start justify-center gap-5",
         link: "flex items-center gap-3 hover:gap-5 transform duration-200 text-[#2405F2]",
         box2: "w-full grid grid-cols-2 gap-4 pr-24",
@@ -17,7 +17,7 @@ const HomeP_2 = () => {
                     How we work
                 </h1>
 
-                <p className="text-[#282938] font-light text-sm">
+                <p className="text-dark-blue font-light text-sm">
                     Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor.
                 </p>
 
@@ -32,7 +32,7 @@ const HomeP_2 = () => {
                         <h1 className='text-4xl font-bold'>
                             {list.title}
                         </h1>
-                        <p className='text-[#282938] text-sm'>
+                        <p className='text-dark-blue text-sm'>
                             {list.description}
                         </p>
                     </div>

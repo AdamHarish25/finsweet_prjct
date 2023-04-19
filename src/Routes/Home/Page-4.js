@@ -3,14 +3,14 @@ import {DataStorage} from '../../Datas/DataStorage'
 const HomeP_4 = () => {
 
     const className = {
-        container: "w-screen h-auto bg-[#F4F6FC] p-20 flex flex-col gap-10 justify-center font-Poppins",
+        container: "w-screen h-auto bg-light-creme p-20 flex flex-col gap-10 justify-center font-Poppins",
         titleBox: "w-full h-auto text-center space-y-3",
-        section: "text-sm text-[#282938] font-medium",
-        title: "text-4xl text-[#282938] font-semibold",
+        section: "text-sm text-dark-blue font-medium",
+        title: "text-4xl text-dark-blue font-semibold",
         cardBox: "w-full h-full grid grid-cols-3 gap-8",
         card: "p-7 w-full h-[310px] text-start bg-white flex flex-col justify-center rounded-lg space-y-5",
         cardTitle: "text-2xl text-black",
-        cardDescription: "font-light text-[#282938]",
+        cardDescription: "font-light text-dark-blue",
 
     };
 

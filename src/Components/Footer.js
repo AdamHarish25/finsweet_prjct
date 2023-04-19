@@ -5,17 +5,18 @@ import { DataStorage } from '../Datas/DataStorage';
 const Footer = () => {
     const className = {
       container:
-        "w-screen h-80 px-20 bg-[#1C1E53] absolute bottom-0 mt-20 grid grid-cols-2 text-white",
+        "w-screen h-80 px-20 bg-[#1C1E53] grid grid-cols-2 text-white",
       contactTitle: "text-lg font-medium",
       contactCard:
-        "absolute bottom-0 py-4 px-10 bg-[#FCD980] grid grid-cols-2 gap-10",
+        "absolute bottom-2 py-4 px-10 bg-[#FCD980] grid grid-cols-2 gap-10",
       contactSection: "space-y-1 text-[#282938]",
-      card1: "relative py-20 space-y-4",
+      card1: "relative py-16 space-y-4",
       card2: "w-full p-20 space-y-5 text-white"
     };
 
-    var Data = DataStorage.footer.socmedLinks
+    var Data = DataStorage.footer.socmedLinks;
 
+    
     return (
       <div className={className.container}>
         <div className={className.card1}>

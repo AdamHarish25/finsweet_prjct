@@ -17,7 +17,7 @@ const HomeP_5 = () => {
                 <h1 className="text-3xl font-bold">
                     What our clients <br/>say about us
                 </h1>
-                <p className='text-sm font-light text-[#282938]'>
+                <p className='text-sm font-light text-dark-blue'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
                 </p>
             </div>

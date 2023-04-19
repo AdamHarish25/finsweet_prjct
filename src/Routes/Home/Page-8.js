@@ -12,7 +12,7 @@ const HomeP_8 = () => {
       cardTitle: "text-2xl font-medium",
       cardSubtitle: "text-gray-500",
       cardLink:
-        "flex items-center gap-4 text-[#282938] font-medium hover:gap-6 transform duration-300 w-fit",
+        "flex items-center gap-4 text-dark-blue font-medium hover:gap-6 transform duration-300 w-fit",
     };
 
     var Data = DataStorage.home.page7CardList
