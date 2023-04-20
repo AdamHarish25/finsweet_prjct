@@ -66,7 +66,7 @@ const Contact = () => {
         <div className={className.inputBox}>
           <h1 className={className.inputName}>Message</h1>
           <textarea
-            className={`${className.formInput} h-[150px]`}
+            className={`${className.formInput} h-[150px] resize-none`}
             placeholder="Write your question here"
           ></textarea>
         </div>

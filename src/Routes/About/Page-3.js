@@ -17,7 +17,7 @@ const AboutP_3 = () => {
             </h1>
             <div className={className.stepbarBox}>
                 {Data.map((data, index) => (
-                    <div key={index} className='h-[160px] relative flex flex-col justify-end'>
+                    <div key={index} className='h-[160px] relative flex flex-col gap-3 justify-end'>
                         <img src={data.img} alt={data.title} className='absolute left-0 top-3'/>
                         <h1 className='text-2xl font-medium'>
                            {data.title} 

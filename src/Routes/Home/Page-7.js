@@ -8,7 +8,7 @@ const HomeP_7 = () => {
       headers:
         "h-full w-full bg-formBG bg-cover bg-no-repeat bg-blend-darken bg-[#1c1e5385] flex flex-col gap-4 px-16 py-28 justify-start text-white",
       headerTitle: "text-[38px] font-semibold",
-      formContainer: "w-full h-full bg-[#1C1E53] space-y-7 px-20 py-14",
+      formContainer: "w-full h-full bg-solid-dark-blue space-y-7 px-20 py-14",
       formHeaderBox: "text-white space-y-5 w-4/5",
       formHeader: "text-3xl font-medium",
       formSubHeader: "text-sm",

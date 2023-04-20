@@ -5,7 +5,7 @@ import { DataStorage } from '../Datas/DataStorage';
 const Footer = () => {
     const className = {
       container:
-        "w-screen h-80 px-20 bg-[#1C1E53] grid grid-cols-2 text-white",
+        "w-screen h-80 px-20 bg-solid-dark-blue grid grid-cols-2 text-white",
       contactTitle: "text-lg font-medium",
       contactCard:
         "absolute bottom-2 py-4 px-10 bg-[#FCD980] grid grid-cols-2 gap-10",

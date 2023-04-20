@@ -23,7 +23,20 @@ import blogCard3 from "../Attachments/Images/blogCard/card3.png";
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-import StepbarVector from '../Attachments/Images/StepBar.svg'
+import StepbarVector from '../Attachments/Images/StepBar.svg';
+
+import Logo1 from '../Attachments/Images/Logo/Logo1.png';
+import Logo2 from "../Attachments/Images/Logo/Logo2.png";
+import Logo3 from "../Attachments/Images/Logo/Logo3.png";
+import Logo4 from "../Attachments/Images/Logo/Logo4.png";
+import Logo5 from "../Attachments/Images/Logo/Logo5.png";
+
+import team1 from '../Attachments/Images/team/team1.png';
+import team2 from "../Attachments/Images/team/team2.png";
+import team3 from "../Attachments/Images/team/team3.png";
+import team4 from "../Attachments/Images/team/team4.png";
+
+
 
 
 const DataStorage = {
@@ -288,7 +301,7 @@ const DataStorage = {
             <br /> consetetur sadipscing elitr.
           </>
         ),
-        img: StepbarVector
+        img: StepbarVector,
       },
       {
         title: "Conception",
@@ -298,7 +311,7 @@ const DataStorage = {
             <br /> consetetur sadipscing elitr.
           </>
         ),
-        img: StepbarVector
+        img: StepbarVector,
       },
       {
         title: "Design",
@@ -308,7 +321,7 @@ const DataStorage = {
             <br /> consetetur sadipscing elitr.
           </>
         ),
-        img: StepbarVector
+        img: StepbarVector,
       },
       {
         title: "Development",
@@ -318,7 +331,72 @@ const DataStorage = {
             <br /> consetetur sadipscing elitr.
           </>
         ),
-        img: StepbarVector
+        img: StepbarVector,
+      },
+    ],
+    page5Cards: [
+      {
+        icon: icon6,
+        title: "Customize with ease",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+      },
+      {
+        icon: icon3,
+        title: "Perfectly Responsive",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+      },
+      {
+        icon: icon1,
+        title: "Friendly Support",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+      },
+    ],
+    page5Logos: [
+      {
+        img: Logo1,
+        alt: "Logo 1",
+      },
+      {
+        img: Logo2,
+        alt: "Logo 2",
+      },
+      {
+        img: Logo3,
+        alt: "Logo 3",
+      },
+      {
+        img: Logo4,
+        alt: "Logo 4",
+      },
+      {
+        img: Logo5,
+        alt: "Logo 5",
+      },
+    ],
+
+    page6Teams: [
+      {
+        name: "John Smith",
+        position: "CEO",
+        img: team1,
+      },
+      {
+        name: "Simon Adams",
+        position: "CTO",
+        img: team2,
+      },
+      {
+        name: "Paul Jones",
+        position: "Design Lead",
+        img: team3,
+      },
+      {
+        name: "Sara Hardin",
+        position: "Project Manager",
+        img: team4,
       },
     ],
   },
