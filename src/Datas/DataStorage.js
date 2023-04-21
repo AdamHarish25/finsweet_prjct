@@ -60,11 +60,11 @@ const DataStorage = {
       },
       {
         title: "FAQ",
-        link: "/Faq",
+        link: "/",
       },
       {
         title: "Blog",
-        link: "/Blog",
+        link: "/",
       },
     ],
   },
@@ -110,11 +110,11 @@ const DataStorage = {
       },
       {
         title: "FAQ",
-        link: "/Faq",
+        link: "/",
       },
       {
         title: "Blog",
-        link: "/Blog",
+        link: "/",
       },
     ],
   },
