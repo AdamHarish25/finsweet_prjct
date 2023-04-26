@@ -4,7 +4,7 @@ import { DataStorage } from "../../Datas/DataStorage";
 const AboutP_5 = () => {
     const className = {
       container:
-        "w-screen h-screen py-20 px-28 space-y-14 font-Poppins text-dark-blue",
+        "w-screen h-auto py-20 px-28 space-y-14 font-Poppins text-dark-blue",
       title: "font-semibold text-4xl text-center",
       cardsBox: "w-full grid grid-cols-3 gap-5 place-items-center",
       card: "bg-[#F4F6FC] p-10 space-y-5 rounded-md",

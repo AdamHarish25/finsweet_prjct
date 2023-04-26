@@ -1,10 +1,10 @@
-import AboutI3 from '../../Attachments/Images/AboutI3.png';
-import AboutI4 from "../../Attachments/Images/AboutI4.png";
+import AboutI3 from "../../Attachments/Images/About/AboutI3.png";
+import AboutI4 from "../../Attachments/Images/About/AboutI4.png";
 
 const AboutP_4 = () => {
     const className = {
-      container: "w-screen h-auto py-32 px-24 my-10 space-y-28 bg-[#EEF4FA] text-dark-blue font-Poppins",
-      card: "w-full flex items-center justify-between",
+      container: "w-screen h-auto py-32 px-24 my-10 space-y-28 bg-pale-blue text-dark-blue font-Poppins",
+      card: "w-full grid grid-cols-2 gap-10 place-items-center",
       paragraphBox: "space-y-6",
       sectTitle: "font-medium",
       title: "text-4xl font-semibold",
@@ -26,6 +26,7 @@ const AboutP_4 = () => {
           </div>
           <img src={AboutI3} alt="an Img" />
         </div>
+
         <div className={className.card}>
           <img src={AboutI4} alt="an Img" />
           <div className={className.paragraphBox}>

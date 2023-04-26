@@ -1,8 +1,9 @@
-import FaqAccordion from '../../Components/Accordion/FaqAccordion';
-import { DataStorage }
-    from '../../Datas/DataStorage';
+import FaqAccordion from "../../Components/Accordion/FaqAccordion";
+import { DataStorage } from "../../Datas/DataStorage";
 
-const HomeP_6 = () => {
+
+const PricingP_2 = () => {
+  
     const className = {
       container:
         "w-screen h-auto p-20 flex items-center justify-between gap-10 font-Poppins",
@@ -12,7 +13,7 @@ const HomeP_6 = () => {
       accordionBox: "px-10",
     };
 
-    var Data = DataStorage.home.page6Accordion
+    var Data = DataStorage.pricing.page2Accordion;
 
     return (
       <div className={className.container}>
@@ -21,13 +22,16 @@ const HomeP_6 = () => {
             Frequently <br />
             asked questions
           </h1>
-          <p className={className.subtitle}>Contact us for more info</p>
+          <p className={className.subtitle}>
+            Contact us for more info
+          </p>
         </div>
         <div className={className.accordionBox}>
           <FaqAccordion faqs={Data} />
         </div>
       </div>
     );
+    
 };
 
-export default HomeP_6
+export default PricingP_2;

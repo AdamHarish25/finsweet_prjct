@@ -1,16 +1,27 @@
 import { Link } from 'react-router-dom';
 import Logo from '../Attachments/Images/Logo.png';
 import { DataStorage } from '../Datas/DataStorage';
+import { useState } from 'react';
 
 export const Navbar = () =>
 
 {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+
     const className = {
-        container: "w-screen fixed top-0 bg-solid-dark-blue text-white flex items-center justify-between py-8 px-10 font-Poppins z-50",
-        logo: "h-5",
-        list1: "gap-14 flex items-center list-none ",
-        list2: "flex items-center gap-7 list-none",
-        button: "py-4 px-8 rounded-full font-medium border border-white hover:text-solid-dark-blue hover:bg-white transition-colors duration-200",
+      container:
+        "w-screen fixed top-0 bg-solid-dark-blue text-white flex items-center justify-between py-8 px-10 font-Poppins z-50",
+      logo: "h-5",
+      list1: "gap-14 flex items-center list-none ",
+      list2: "flex items-center gap-7 list-none",
+      button:
+        "py-4 px-8 rounded-full font-medium border border-white hover:text-solid-dark-blue hover:bg-white transition-colors duration-200",
+      link: "hover:font-bold transition-all duration-200",
+    };
+
+    const toggleNavlink = (index) => {
+        setActiveIndex(index === activeIndex ? null : index);
     };
 
     return (
@@ -22,8 +33,8 @@ export const Navbar = () =>
                     <ul className={className.list2}>
                         {
                             DataStorage.navbar.menus.map((data, index) => (
-                                <li className='hover:font-bold transition-all duration-200' key={index}>
-                                    <Link to={ data.link }>{ data.title }</Link>
+                                <li className={`${className.link} ${index === activeIndex ? "font-bold" : "font-normal"}`} key={index}>
+                                    <Link onClick={() => toggleNavlink(index)} to={ data.link }>{ data.title }</Link>
                                 </li>
                             ))
                         }

@@ -1,4 +1,4 @@
-import AboutI1 from '../../Attachments/Images/AboutI1.png'
+import AboutI1 from '../../Attachments/Images/About/AboutI1.png';
 
 const AboutP_1 = () => {
     const className = {

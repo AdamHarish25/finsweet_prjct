@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import vector from '../../Attachments/Images/homeVector.svg';
+import vector from '../../Attachments/Images/Home/homeVector.svg';
 import { FaArrowRight } from 'react-icons/fa';
 
 const HomeP_1 = () => {
@@ -10,7 +10,7 @@ const HomeP_1 = () => {
       title: "text-5xl",
       imageBox: "h-full w-full grid place-items-center",
       buttonBox: "flex items-center gap-10",
-      link1: "px-10 py-6 bg-[#FCD980] rounded-full text-black",
+      link1: "px-10 py-4 bg-[#FCD980] rounded-full text-black",
       link2: "flex items-center gap-4 transform duration-150 hover:gap-6",
     };
 

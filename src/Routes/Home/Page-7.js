@@ -15,6 +15,10 @@ const HomeP_7 = () => {
       formInput:
         "placeholder-gray-500 p-4 w-full bg-transparent border-2 border-[#ffffff10] rounded-xl focus:border-blue-300 outline-none",
       form: "flex flex-col gap-5 w-full text-white font-Poppins",
+      formButton:
+        "w-full mt-6 py-5 font-medium hover:bg-thick-creamy bg-bright-creamy transition-colors duration-300 text-black rounded-full",
+      formLink:
+        "flex items-center gap-3 text-white hover:gap-5 transform duration-300",
     };
 
     return (
@@ -59,7 +63,7 @@ const HomeP_7 = () => {
 
               <button
                 type="submit"
-                className="w-full mt-6 py-5 font-medium hover:bg-[#deab2a] bg-[#FCD980] transition-colors duration-300 text-black rounded-full"
+                className={className.formButton}
               >
                 Send an Inquiry
               </button>
@@ -67,7 +71,7 @@ const HomeP_7 = () => {
             <div className="w-full flex justify-center">
               <Link
                 to={`/Contact`}
-                className="flex items-center gap-3 text-white hover:gap-5 transform duration-300"
+                className={className.formLink}
               >
                 Get in touch with us <FaArrowRight />
               </Link>
