@@ -20,7 +20,7 @@ function App() {
     <div id="App" className="overflow-hidden relative">
       <ScrollToTop history={Histories}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Features" element={<Features />} />
           <Route path="/Work" element={<Work />} />

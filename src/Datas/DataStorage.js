@@ -671,6 +671,27 @@ const DataStorage = {
       },
     ],
   },
+
+  work: {
+    socmedLinks: [
+      {
+        icon: <FaFacebook />,
+        link: "https://facebook.com",
+      },
+      {
+        icon: <FaTwitter />,
+        link: "https://Twitter.com",
+      },
+      {
+        icon: <FaInstagram />,
+        link: "https://Instagram.com",
+      },
+      {
+        icon: <FaLinkedin />,
+        link: "https://Linkedin.com",
+      },
+    ],
+  },
 };
 
 export { DataStorage };
