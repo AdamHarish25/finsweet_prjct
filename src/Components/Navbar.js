@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import Logo from '../Attachments/Images/Logo.png';
 import { DataStorage } from '../Datas/DataStorage';
-import { useState } from 'react';
 
 export const Navbar = () =>
 
 {
-    const [activeIndex, setActiveIndex] = useState(null);
+
 
 
     const className = {
@@ -20,9 +19,6 @@ export const Navbar = () =>
       link: "hover:font-bold transition-all duration-200",
     };
 
-    const toggleNavlink = (index) => {
-        setActiveIndex(index === activeIndex ? null : index);
-    };
 
     return (
         <header className={className.container}>
@@ -33,8 +29,8 @@ export const Navbar = () =>
                     <ul className={className.list2}>
                         {
                             DataStorage.navbar.menus.map((data, index) => (
-                                <li className={`${className.link} ${index === activeIndex ? "font-bold" : "font-normal"}`} key={index}>
-                                    <Link onClick={() => toggleNavlink(index)} to={ data.link }>{ data.title }</Link>
+                                <li className={`${className.link} ${window.location.pathname === data.link ? "font-bold" : "font-normal"}`} key={index}>
+                                    <Link to={ data.link }>{ data.title }</Link>
                                 </li>
                             ))
                         }

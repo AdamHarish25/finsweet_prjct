@@ -11,7 +11,8 @@ const Footer = () => {
         "absolute bottom-2 py-4 px-10 bg-[#FCD980] grid grid-cols-2 gap-10",
       contactSection: "space-y-1 text-[#282938]",
       card1: "relative py-16 space-y-4",
-      card2: "w-full p-20 space-y-5 text-white"
+      card2: "w-full p-20 space-y-5 text-white",
+      link: "hover:text-gray-400 transition-colors duration-300",
     };
 
     var Data = DataStorage.footer.socmedLinks;
@@ -44,7 +45,7 @@ const Footer = () => {
           </p>
           <div className='flex items-center gap-5'>
             {Data.map((data, index) => (
-              <Link to={data.link} key={index}>
+              <Link className={className.link} to={data.link} key={index}>
                 {data.icon}
               </Link>
             ))}

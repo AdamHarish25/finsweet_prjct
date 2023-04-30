@@ -6,6 +6,7 @@ const BottomBar = () => {
       container:
         "w-screen py-5 grid grid-cols-2 text-[#282938] bg-white place-items-center font-Poppins",
       menuBox: "flex items-center gap-7",
+      link: "hover:font-medium transform duration-300",
     };
 
     var Data = DataStorage.bottomBar.menus 
@@ -17,7 +18,7 @@ const BottomBar = () => {
         </div>
         <div className={className.menuBox}>
             {Data.map((data, index) => (
-                <Link to={data.link} key={index} className='hover:font-medium transform duration-300'>
+                <Link to={data.link} key={index} className={`${className.link} ${window.location.pathname === data.link ? "font-medium" : "font-normal"}`}>
                     {data.title}
                 </Link>
             ))}

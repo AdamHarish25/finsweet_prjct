@@ -45,6 +45,7 @@ module.exports = {
         "royal-blue": "#2405F2",
         "pale-blue": "#EEF4FA",
         "pale-creamy": "#FCD98033",
+        "bluish-black": "#1B1C2B",
       },
     },
   },

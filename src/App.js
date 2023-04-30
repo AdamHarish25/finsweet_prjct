@@ -1,4 +1,4 @@
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes, useNavigate} from 'react-router-dom';
 import './App.css';
 import Footbar from './Components/Footbar';
 import { Navbar } from './Components/Navbar';
@@ -10,12 +10,20 @@ import Pricing from "./Routes/Pricing";
 import Contact from "./Routes/Contact";
 import ScrollToTop from './Components/ScrollToTop';
 import Histories from './Components/History';
+import WorkCase from './Routes/WorkCase';
+import { DataStorage } from './Datas/DataStorage';
 
 
 
 
 function App() {
 
+  var navigate = useNavigate();
+
+  navigate(0);
+
+  const WorkData = DataStorage.workCase;
+  
   return (
     <div id="App" className="overflow-hidden relative">
       <ScrollToTop history={Histories}>
@@ -26,6 +34,9 @@ function App() {
           <Route path="/Work" element={<Work />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
+          {WorkData.map((data, index) => (
+            <Route key={index} path={`/Work/page${index+1}`} element={<WorkCase data={data.case}/>}/>
+          ))}
         </Routes>
       </ScrollToTop>
 

@@ -1,51 +1,57 @@
-import imgh1 from '../Attachments/Images/Home/list/one.png';
-import imgh2 from '../Attachments/Images/Home/list/two.png';
-import imgh3 from '../Attachments/Images/Home/list/three.png';
-import imgh4 from '../Attachments/Images/Home/list/four.png';
-import cardh1 from '../Attachments/Images/Home/card/Card1.png';
+import imgh1 from "../Attachments/Images/Home/list/one.png";
+import imgh2 from "../Attachments/Images/Home/list/two.png";
+import imgh3 from "../Attachments/Images/Home/list/three.png";
+import imgh4 from "../Attachments/Images/Home/list/four.png";
+import cardh1 from "../Attachments/Images/Home/card/Card1.png";
 import cardh2 from "../Attachments/Images/Home/card/Card2.png";
 import cardh3 from "../Attachments/Images/Home/card/Card3.png";
 
-import icon1 from '../Attachments/Images/CardIcons/Icon-1.svg';
-import icon2 from '../Attachments/Images/CardIcons/Icon-2.svg';
-import icon3 from '../Attachments/Images/CardIcons/Icon-3.svg';
-import icon4 from '../Attachments/Images/CardIcons/Icon-4.svg';
-import icon5 from '../Attachments/Images/CardIcons/Icon-5.svg';
-import icon6 from '../Attachments/Images/CardIcons/Icon-6.svg';
+import icon1 from "../Attachments/Images/CardIcons/Icon-1.svg";
+import icon2 from "../Attachments/Images/CardIcons/Icon-2.svg";
+import icon3 from "../Attachments/Images/CardIcons/Icon-3.svg";
+import icon4 from "../Attachments/Images/CardIcons/Icon-4.svg";
+import icon5 from "../Attachments/Images/CardIcons/Icon-5.svg";
+import icon6 from "../Attachments/Images/CardIcons/Icon-6.svg";
 
-import person1 from '../Attachments/Images/Home/personList/person1.jpg';
+import person1 from "../Attachments/Images/Home/personList/person1.jpg";
 import person2 from "../Attachments/Images/Home/personList/person2.jpg";
 import person3 from "../Attachments/Images/Home/personList/person3.jpg";
 
-import blogCard1 from '../Attachments/Images/Home/blogCard/card1.png';
+import blogCard1 from "../Attachments/Images/Home/blogCard/card1.png";
 import blogCard2 from "../Attachments/Images/Home/blogCard/card2.png";
 import blogCard3 from "../Attachments/Images/Home/blogCard/card3.png";
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-import StepbarVector from '../Attachments/Images/StepBar.svg';
+import StepbarVector from "../Attachments/Images/StepBar.svg";
 
-import Logo1 from '../Attachments/Images/Logo/Logo1.png';
+import Logo1 from "../Attachments/Images/Logo/Logo1.png";
 import Logo2 from "../Attachments/Images/Logo/Logo2.png";
 import Logo3 from "../Attachments/Images/Logo/Logo3.png";
 import Logo4 from "../Attachments/Images/Logo/Logo4.png";
 import Logo5 from "../Attachments/Images/Logo/Logo5.png";
 
-import team1 from '../Attachments/Images/About/team/team1.png';
+import team1 from "../Attachments/Images/About/team/team1.png";
 import team2 from "../Attachments/Images/About/team/team2.png";
 import team3 from "../Attachments/Images/About/team/team3.png";
 import team4 from "../Attachments/Images/About/team/team4.png";
 
-import activePointer from '../Attachments/Images/Pricing/Pointer.svg';
+import activePointer from "../Attachments/Images/Pricing/Pointer.svg";
 import unactivePointer from "../Attachments/Images/Pricing/PointerGrey.svg";
 
-import FeatureI1 from '../Attachments/Images/Features/FeatureI1.png';
+import FeatureI1 from "../Attachments/Images/Features/FeatureI1.png";
 import FeatureI2 from "../Attachments/Images/Features/FeatureI2.png";
 import FeatureI3 from "../Attachments/Images/Features/FeatureI3.png";
 import FeatureI4 from "../Attachments/Images/Features/FeatureI4.png";
 
+import PortImg1 from "../Attachments/Images/Work/portfolioCards/PortImg1.svg";
+import PortImg2 from "../Attachments/Images/Work/portfolioCards/PortImg2.svg";
+import PortImg3 from "../Attachments/Images/Work/portfolioCards/PortImg3.svg";
+import PortImg4 from "../Attachments/Images/Work/portfolioCards/PortImg4.svg";
+import PortImg5 from "../Attachments/Images/Work/portfolioCards/PortImg5.svg";
+import PortImg6 from "../Attachments/Images/Work/portfolioCards/PortImg6.svg";
 
-
+import Port1Img from "../Attachments/Images/Work/portfolioCards/Port1/img1.png";
 
 const DataStorage = {
   navbar: {
@@ -67,8 +73,8 @@ const DataStorage = {
         link: "/Pricing",
       },
       {
-        title: "FAQ",
-        link: "/",
+        title: "Works",
+        link: "/Work",
       },
       {
         title: "Blog",
@@ -117,8 +123,8 @@ const DataStorage = {
         link: "/Pricing",
       },
       {
-        title: "FAQ",
-        link: "/",
+        title: "Works",
+        link: "/Work",
       },
       {
         title: "Blog",
@@ -691,7 +697,546 @@ const DataStorage = {
         link: "https://Linkedin.com",
       },
     ],
+    page2filterList: [
+      {
+        title: "All",
+        filter: "",
+      },
+      {
+        title: "UI Design",
+        filter: "#UI",
+      },
+      {
+        title: "Webflow Design",
+        filter: "#Webflow",
+      },
+      {
+        title: "Figma Design",
+        filter: "#Figma",
+      },
+    ],
+
+    page2PortfolioCards: [
+      {
+        title: "Template 1",
+        id: 1,
+        img: PortImg1,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "View Portfolio",
+        tag: "#Webflow",
+      },
+
+      {
+        title: "Template 2",
+        id: 2,
+        img: PortImg2,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "View Portfolio",
+        tag: "#Webflow",
+      },
+
+      {
+        title: "Template 3",
+        id: 3,
+        img: PortImg3,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "Read Case Study",
+        tag: "#UI",
+      },
+
+      {
+        title: "Template 4",
+        id: 4,
+        img: PortImg4,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "Read Case Study",
+        tag: "#UI",
+      },
+
+      {
+        title: "Template 5",
+        id: 5,
+        img: PortImg5,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "Read Case Study",
+        tag: "#Figma",
+      },
+
+      {
+        title: "Template 6",
+        id: 6,
+        img: PortImg6,
+        subtitle:
+          "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        buttonText: "Read Case Study",
+        tag: "#Figma",
+      },
+    ],
   },
+
+  workCase: [
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg1,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg2,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg3,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg4,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg5,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+    {
+      case: {
+        headerSect: "Web design and development",
+        headerTitle: "Finsweet Design case studies",
+        headerSubtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        img1: PortImg6,
+
+        clientName: "facebook.com",
+        clientServiceChoice: "Product Design",
+        clientDelivery: "UI Screens, UX Flow & Prototype",
+
+        title1: "About the project",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list1: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        img2: Port1Img,
+
+        title2: "How we do it",
+        subtitle2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list2: [
+          {
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          },
+          {
+            content:
+              "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+          },
+          {
+            content:
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          },
+          {
+            content:
+              "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+          },
+        ],
+        keywordList: [
+          {
+            keyword: "Design",
+          },
+          {
+            keyword: "UI/UX",
+          },
+          {
+            keyword: "Wireframing",
+          },
+          {
+            keyword: "Branding",
+          },
+          {
+            keyword: "Development",
+          },
+          {
+            keyword: "Webflow",
+          },
+        ],
+      },
+    },
+  ],
 };
 
 export { DataStorage };

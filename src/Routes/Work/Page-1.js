@@ -9,11 +9,11 @@ const WorkP_1 = () => {
         "w-screen flex flex-col gap-7 items-center justify-center p-20 text-center bg-pearl-gray text-dark-blue",
       headerBox: "space-y-3",
       title: "text-4xl font-semibold",
-      listBox: "list-none flex items-center gap-3 justify-center",
+      listBox: "list-none flex items-center gap-5 justify-center",
+      link: "hover:text-gray-400 transition-colors duration-300",
     };
 
-    var Data = DataStorage.work.socmedLinks
-
+    var Data = DataStorage.work.socmedLinks;
 
     return (
       <div className={className.container}>
@@ -32,7 +32,7 @@ const WorkP_1 = () => {
         <ul className={className.listBox}>
           {Data.map((data, index) => (
             <li key={index}>
-              <Link to={data.link}>{data.icon}</Link>
+              <Link className={className.link} to={data.link}>{data.icon}</Link>
             </li>
           ))}
         </ul>
