@@ -15,7 +15,7 @@ export const Navbar = () =>
       list1: "gap-14 flex items-center list-none ",
       list2: "flex items-center gap-7 list-none",
       button:
-        "py-4 px-8 rounded-full font-medium border border-white hover:text-solid-dark-blue hover:bg-white transition-colors duration-200",
+        `py-4 px-8 rounded-full font-medium border border-white hover:text-solid-dark-blue hover:bg-white transition-colors duration-100 ${window.location.pathname === "/Contact" ? "text-solid-dark-blue bg-white" : ""}`,
       link: "hover:font-bold transition-all duration-200",
     };
 
@@ -29,7 +29,7 @@ export const Navbar = () =>
                     <ul className={className.list2}>
                         {
                             DataStorage.navbar.menus.map((data, index) => (
-                                <li className={`${className.link} ${window.location.pathname === data.link ? "font-bold" : "font-normal"}`} key={index}>
+                                <li className={`${className.link} ${window.location.pathname === ( data.link || `${data.link}/*`) ? "font-bold" : "font-normal"}`} key={index}>
                                     <Link to={ data.link }>{ data.title }</Link>
                                 </li>
                             ))

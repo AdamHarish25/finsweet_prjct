@@ -1,7 +1,10 @@
+//This is all images and Icons that listed and used for the list based datas
+
 import imgh1 from "../Attachments/Images/Home/list/one.png";
 import imgh2 from "../Attachments/Images/Home/list/two.png";
 import imgh3 from "../Attachments/Images/Home/list/three.png";
 import imgh4 from "../Attachments/Images/Home/list/four.png";
+
 import cardh1 from "../Attachments/Images/Home/card/Card1.png";
 import cardh2 from "../Attachments/Images/Home/card/Card2.png";
 import cardh3 from "../Attachments/Images/Home/card/Card3.png";
@@ -44,6 +47,15 @@ import FeatureI2 from "../Attachments/Images/Features/FeatureI2.png";
 import FeatureI3 from "../Attachments/Images/Features/FeatureI3.png";
 import FeatureI4 from "../Attachments/Images/Features/FeatureI4.png";
 
+import BlogI1 from '../Attachments/Images/Blog/gridImages/img1.svg';
+import BlogI2 from "../Attachments/Images/Blog/gridImages/img2.svg";
+import BlogI3 from "../Attachments/Images/Blog/gridImages/img3.svg";
+import BlogI4 from "../Attachments/Images/Blog/gridImages/img4.svg";
+import BlogI5 from "../Attachments/Images/Blog/gridImages/img5.svg";
+import BlogI6 from "../Attachments/Images/Blog/gridImages/img6.svg";
+
+import BlogCase from "../Attachments/Images/Blog/blogCase.svg";
+
 import PortImg1 from "../Attachments/Images/Work/portfolioCards/PortImg1.svg";
 import PortImg2 from "../Attachments/Images/Work/portfolioCards/PortImg2.svg";
 import PortImg3 from "../Attachments/Images/Work/portfolioCards/PortImg3.svg";
@@ -51,9 +63,16 @@ import PortImg4 from "../Attachments/Images/Work/portfolioCards/PortImg4.svg";
 import PortImg5 from "../Attachments/Images/Work/portfolioCards/PortImg5.svg";
 import PortImg6 from "../Attachments/Images/Work/portfolioCards/PortImg6.svg";
 
-import Port1Img from "../Attachments/Images/Work/portfolioCards/Port1/img1.png";
+import WorkCase from "../Attachments/Images/Work/portfolioCards/Port1/img1.png";
 
 const DataStorage = {
+
+  //You can change all the datas here (exception "non"list data)
+
+  //Tips: use Ctrl+F to search everylisting Data here
+
+  //listing
+
   navbar: {
     menus: [
       {
@@ -78,7 +97,7 @@ const DataStorage = {
       },
       {
         title: "Blog",
-        link: "/",
+        link: "/Blog",
       },
     ],
   },
@@ -128,7 +147,7 @@ const DataStorage = {
       },
       {
         title: "Blog",
-        link: "/",
+        link: "/Blog",
       },
     ],
   },
@@ -282,7 +301,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/post1",
+        link: "/Blog/post1",
         image: blogCard1,
         datePosted: "21 Jan 2019",
       },
@@ -291,7 +310,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/post2",
+        link: "/Blog/post2",
         image: blogCard2,
         datePosted: "19 Sep 2021",
       },
@@ -300,7 +319,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/post3",
+        link: "/Blog/post3",
         image: blogCard3,
         datePosted: "23 Mar 2023",
       },
@@ -779,6 +798,67 @@ const DataStorage = {
     ],
   },
 
+  blog: [
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI1,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "1",
+    },
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI2,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "2",
+    },
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI3,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "3",
+    },
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI4,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "4",
+    },
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI5,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "5",
+    },
+    {
+      date: "27 Jan 2021",
+      title:
+        "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      img: BlogI6,
+      subtitle:
+        "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+      id: "6",
+    },
+  ],
+
+  //Tips: use Ctrl+F to search every case Data here
+
+  //casing: WorkCase & BlogCase
+
   workCase: [
     {
       case: {
@@ -812,7 +892,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -888,7 +968,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -964,7 +1044,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -1040,7 +1120,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -1116,7 +1196,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -1192,7 +1272,7 @@ const DataStorage = {
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
           },
         ],
-        img2: Port1Img,
+        img2: WorkCase,
 
         title2: "How we do it",
         subtitle2:
@@ -1234,6 +1314,231 @@ const DataStorage = {
             keyword: "Webflow",
           },
         ],
+      },
+    },
+  ],
+
+
+  blogCase: [
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI1,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    },
+
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI2,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    },
+
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI3,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    },
+
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI4,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    },
+
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI5,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    },
+
+    {
+      case: {
+        headerTitle:
+          "A UX Case Study on Creating a Studious Environment for Students",
+        DateAndWriter: `Andrew Jonson posted on 27th January 2021`,
+        img1: BlogI6,
+        title1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subtitle1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        title2: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle2_1:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        list: [
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+          {
+            content:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+          },
+        ],
+        subtitle2_2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        img2: BlogCase,
+        title3: "Ut enim ad minim veniam, quis nostrud.",
+        subtitle3:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       },
     },
   ],

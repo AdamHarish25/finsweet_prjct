@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const WorkP_3 = () => {
@@ -6,7 +7,7 @@ const WorkP_3 = () => {
       container:
         "w-full p-20 flex flex-col justify-center items-center gap-7 text-dark-blue text-center",
       title: "font-semibold text-4xl",
-      button: "px-10 py-4 text-bluish-black bg-bright-creamy rounded-full hover:font-semibold hover:py-6 hover:px-12 transition-all duration-300",
+      button: "px-10 py-4 text-bluish-black bg-bright-creamy rounded-full hover:font-semibold hover:px-12 transition-all duration-300",
       subtitle: "opacity-70 text-sm",
     };
 
@@ -21,9 +22,9 @@ const WorkP_3 = () => {
           Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
           ultricies <br/>nec dolor sit amet, scelerisque cursus purus.
         </p>
-        <button className={className.button}>
+        <Link to={`/Contact`} className={className.button}>
             Contact Us
-        </button>
+        </Link>
       </div>
     );
 

@@ -930,6 +930,10 @@ video {
   gap: 840px !important;
 }
 
+.gap-1{
+  gap: 0.25rem !important;
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))) !important;
@@ -958,6 +962,12 @@ video {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse)) !important;
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(5rem * var(--tw-space-y-reverse)) !important;
 }
 
 .space-y-24 > :not([hidden]) ~ :not([hidden]){
@@ -1006,6 +1016,12 @@ video {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(2rem * var(--tw-space-y-reverse)) !important;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse)) !important;
 }
 
 .overflow-hidden{
@@ -1293,6 +1309,15 @@ video {
   padding-bottom: 120px !important;
 }
 
+.px-5{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.pb-20{
+  padding-bottom: 5rem !important;
+}
+
 .pl-20{
   padding-left: 5rem !important;
 }
@@ -1305,8 +1330,16 @@ video {
   padding-top: 2.5rem !important;
 }
 
+.pt-36{
+  padding-top: 9rem !important;
+}
+
 .pt-\[90px\]{
   padding-top: 90px !important;
+}
+
+.pt-32{
+  padding-top: 8rem !important;
 }
 
 .text-center{
@@ -1437,6 +1470,11 @@ video {
   color: rgb(36 5 242 / var(--tw-text-opacity)) !important;
 }
 
+.text-solid-dark-blue{
+  --tw-text-opacity: 1 !important;
+  color: rgb(28 30 83 / var(--tw-text-opacity)) !important;
+}
+
 .text-white{
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
@@ -1546,11 +1584,6 @@ video {
   padding-right: 3rem !important;
 }
 
-.hover\:py-6:hover{
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
 .hover\:font-bold:hover{
   font-weight: 700 !important;
 }
@@ -1587,6 +1620,11 @@ video {
 @media (min-width: 1806px){
   .\32xl\:w-\[500px\]{
     width: 500px !important;
+  }
+
+  .\32xl\:text-3xl{
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
   }
 
   .\32xl\:text-5xl{
