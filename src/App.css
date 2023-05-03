@@ -1693,6 +1693,10 @@ video {
     width: 500px !important;
   }
 
+  .\32xl\:gap-20{
+    gap: 5rem !important;
+  }
+
   .\32xl\:px-28{
     padding-left: 7rem !important;
     padding-right: 7rem !important;
