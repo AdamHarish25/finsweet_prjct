@@ -181,6 +181,7 @@ const DataStorage = {
           "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
       },
     ],
+
     page3Cards: {
       card1: {
         img: cardh1,
@@ -246,6 +247,7 @@ const DataStorage = {
           "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
       },
     ],
+
     page5Slider: [
       {
         feedback:
@@ -327,6 +329,7 @@ const DataStorage = {
       },
     ],
   },
+
   about: {
     page3Stepbar: [
       {
@@ -370,6 +373,7 @@ const DataStorage = {
         img: StepbarVector,
       },
     ],
+
     page5Cards: [
       {
         icon: icon6,
@@ -390,6 +394,7 @@ const DataStorage = {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
       },
     ],
+
     page5Logos: [
       {
         img: Logo1,
@@ -718,6 +723,7 @@ const DataStorage = {
         link: "https://Linkedin.com",
       },
     ],
+    
     page2filterList: [
       {
         title: "All",
