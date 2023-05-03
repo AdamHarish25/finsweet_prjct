@@ -22,7 +22,7 @@ const WorkCase = ({ data }) => {
     keywordBox:
       "flex items-center justify-between w-full border-y-2 border-y-dark-blue py-5 border-opacity-30",
     keywordTitle: "text-2xl font-medium text-royal-blue",
-    keywordList: "flex items-center gap-28 text-lg font-medium opacity-70",
+    keywordList: "w-full pl-16 2xl:pl-20 flex items-center justify-between text-lg font-medium opacity-70",
   };
 
 

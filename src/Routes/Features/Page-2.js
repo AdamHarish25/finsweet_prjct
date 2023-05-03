@@ -4,14 +4,15 @@ import { DataStorage } from "../../Datas/DataStorage";
 const FeatureP_2 = () => {
  const className = {
    container:
-     "w-screen h-auto py-20 px-28 space-y-14 font-Poppins text-dark-blue",
+     "w-screen h-auto py-20 px-20 2xl:px-28 space-y-14 font-Poppins text-dark-blue",
    title: "font-semibold text-4xl text-center",
    cardsBox: "w-full grid grid-cols-3 gap-5 place-items-center",
    card: "bg-[#F4F6FC] p-10 space-y-5 rounded-md",
    cardTitle: "text-2xl font-medium",
    logoCardBox: "w-full flex gap-20 items-center justify-center",
    logoTitle: "text-4xl font-semibold",
-   logoCard: "flex gap-16",
+   logoCard: "flex gap-6 xl:gap-16",
+   logoImg: "w-32 xl:w-auto",
    logoSubtitle: "opacity-70",
  };
 

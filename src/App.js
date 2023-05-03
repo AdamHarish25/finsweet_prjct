@@ -14,6 +14,8 @@ import WorkCase from './Routes/WorkCase';
 import { DataStorage } from './Datas/DataStorage';
 import Blog from './Routes/Blog';
 import BlogCase from './Routes/BlogCase';
+import { useViewport } from './Components/Viewport';
+import MobileWarning from './Routes/MobileWarning';
 
 
 
@@ -24,11 +26,17 @@ function App() {
 
   navigate(0);
 
+  var viewport = useViewport().windowSize;
+
   const WorkData = DataStorage.workCase;
 
   const BlogData = DataStorage.blogCase;
   
-  return (
+
+
+  return viewport.innerWidth < 1280 ? (
+    <MobileWarning />
+  ) : (
     <div id="App" className="overflow-hidden relative">
       <ScrollToTop history={Histories}>
         <Routes>
@@ -38,13 +46,21 @@ function App() {
           <Route path="/Work" element={<Work />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Blog" element={<Blog />}/>
+          <Route path="/Blog" element={<Blog />} />
           {WorkData.map((data, index) => (
-            <Route key={index} path={`/Work/page${index+1}`} element={<WorkCase data={data.case}/>}/>
+            <Route
+              key={index}
+              path={`/Work/page${index + 1}`}
+              element={<WorkCase data={data.case} />}
+            />
           ))}
-          
+
           {BlogData.map((data, index) => (
-            <Route key={index} path={`/Blog/page${index+1}`} element={<BlogCase data={data.case}/>}/>
+            <Route
+              key={index}
+              path={`/Blog/page${index + 1}`}
+              element={<BlogCase data={data.case} />}
+            />
           ))}
         </Routes>
       </ScrollToTop>

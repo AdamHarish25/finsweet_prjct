@@ -41,7 +41,7 @@ const BlogP_2 = () => {
                             {data.subtitle}
                         </p>
 
-                        <Link to={`page${index+1}`} className={className.cardLink}>
+                        <Link to={`page${data.id}`} className={className.cardLink}>
                             Read More <FaArrowRight/>
                         </Link>
                     </div>

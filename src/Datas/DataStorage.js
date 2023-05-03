@@ -47,6 +47,9 @@ import FeatureI2 from "../Attachments/Images/Features/FeatureI2.png";
 import FeatureI3 from "../Attachments/Images/Features/FeatureI3.png";
 import FeatureI4 from "../Attachments/Images/Features/FeatureI4.png";
 
+import Desktop from '../Attachments/Images/MobileWarning/Desktop.svg';
+import Mobile from "../Attachments/Images/MobileWarning/Mobile.svg";
+
 import BlogI1 from '../Attachments/Images/Blog/gridImages/img1.svg';
 import BlogI2 from "../Attachments/Images/Blog/gridImages/img2.svg";
 import BlogI3 from "../Attachments/Images/Blog/gridImages/img3.svg";
@@ -66,7 +69,6 @@ import PortImg6 from "../Attachments/Images/Work/portfolioCards/PortImg6.svg";
 import WorkCase from "../Attachments/Images/Work/portfolioCards/Port1/img1.png";
 
 const DataStorage = {
-
   //You can change all the datas here (exception "non"list data)
 
   //Tips: use Ctrl+F to search everylisting Data here
@@ -301,7 +303,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/Blog/post1",
+        link: "/Blog/page1",
         image: blogCard1,
         datePosted: "21 Jan 2019",
       },
@@ -310,7 +312,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/Blog/post2",
+        link: "/Blog/page2",
         image: blogCard2,
         datePosted: "19 Sep 2021",
       },
@@ -319,7 +321,7 @@ const DataStorage = {
           "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
         subtitle:
           "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-        link: "/Blog/post3",
+        link: "/Blog/page3",
         image: blogCard3,
         datePosted: "23 Mar 2023",
       },
@@ -855,6 +857,17 @@ const DataStorage = {
     },
   ],
 
+  mobileWarning: [
+    {
+      title: "Supported Devices",
+      img: Desktop,
+    },
+    {
+      title: "Unsupported Devices",
+      img: Mobile,
+    },
+  ],
+
   //Tips: use Ctrl+F to search every case Data here
 
   //casing: WorkCase & BlogCase
@@ -1317,7 +1330,6 @@ const DataStorage = {
       },
     },
   ],
-
 
   blogCase: [
     {
