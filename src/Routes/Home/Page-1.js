@@ -16,27 +16,39 @@ const HomeP_1 = () => {
 
 
     return (
-        <div className={ classname.container  }>
-            <div className={ classname.greetings }>
-                <strong className={classname.title}>
-                    Building stellar <br />
-                    websites for early <br />
-                    startups
-                </strong>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt.
-                </p>
-                <div className={ classname.buttonBox }>
-                    <Link to="/Work" className={classname.link1}>View our work</Link>
-                    <Link className={classname.link2} to="/Pricing">View Pricing <FaArrowRight/></Link>
-                </div>
-            </div>
+      <div className={classname.container}>
+        <div className={classname.greetings}>
+          <strong className={classname.title}>
+            Building stellar <br />
+            websites for early <br />
+            startups
+          </strong>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
+            <br />
+            eiusmod tempor incididunt.
+          </p>
+          <div className={classname.buttonBox}>
+            <Link
+              to="/Work"
+              className={classname.link1}
+            >
+              View our work
+            </Link>
+            <Link
+              className={classname.link2}
+              to="/Pricing"
+            >
+              View Pricing <FaArrowRight />
+            </Link>
+          </div>
+        </div>
 
-            <div className={ classname.imageBox }>
-                <img src={ vector } alt="A vector-like Img" />
-            </div>
-        </div>  
-    )
+        <div className={classname.imageBox}>
+          <img src={vector} alt="A vector-like Img" />
+        </div>
+      </div>
+    );
 };
 
 export default HomeP_1

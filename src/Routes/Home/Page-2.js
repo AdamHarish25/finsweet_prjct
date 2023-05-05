@@ -11,35 +11,33 @@ const HomeP_2 = () => {
     }
 
     return (
-        <div className={classname.container}>
-            <div className={ classname.box1 }>
-                <h1 className="text-5xl font-bold">
-                    How we work
-                </h1>
+      <div className={classname.container}>
+        <div className={classname.box1}>
+          <h1 className="text-5xl font-bold">How we work</h1>
 
-                <p className="text-dark-blue font-light text-sm">
-                    Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor.
-                </p>
+          <p className="text-dark-blue font-light text-sm">
+            Lorem ipsum dolor sit amet, consectetur
+            <br /> adipiscing elit, sed do eiusmod tempor.
+          </p>
 
-                <Link to={`/Contact`} className={classname.link}>
-                    Get in touch with us <FaArrowRight/>
-                </Link>
-            </div>
-            <div className={ classname.box2 }>
-                { DataStorage.home.page2List.map((list, index) => (
-                    <div className='space-y-4 p-4'>
-                        <img src={ list.image } alt='Vectorized numbers' className='h-12' />
-                        <h1 className='text-4xl font-bold'>
-                            {list.title}
-                        </h1>
-                        <p className='text-dark-blue text-sm'>
-                            {list.description}
-                        </p>
-                    </div>
-                ) )}
-            </div>
+          <Link
+            to={`/Contact`}
+            className={classname.link}
+          >
+            Get in touch with us <FaArrowRight />
+          </Link>
         </div>
-    )
+        <div className={classname.box2}>
+          {DataStorage.home.page2List.map((list, index) => (
+            <div className="space-y-4 p-4">
+              <img src={list.image} alt="Vectorized numbers" className="h-12" />
+              <h1 className="text-4xl font-bold">{list.title}</h1>
+              <p className="text-dark-blue text-sm">{list.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
 };
 
 export default HomeP_2

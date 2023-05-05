@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaArrowRight } from 'react-icons/fa'
+import { RefreshPage } from "../../Components/RefreshPage";
 
 const HomeP_7 = () => {
     const className = {
@@ -61,15 +62,13 @@ const HomeP_7 = () => {
                 className={className.formInput}
               />
 
-              <button
-                type="submit"
-                className={className.formButton}
-              >
+              <button type="submit" className={className.formButton}>
                 Send an Inquiry
               </button>
             </form>
             <div className="w-full flex justify-center">
               <Link
+                onClick={() => RefreshPage()}
                 to={`/Contact`}
                 className={className.formLink}
               >

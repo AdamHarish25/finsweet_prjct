@@ -20,10 +20,14 @@ const WorkP_3 = () => {
         </h1>
         <p className={className.subtitle}>
           Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
-          ultricies <br/>nec dolor sit amet, scelerisque cursus purus.
+          ultricies <br />
+          nec dolor sit amet, scelerisque cursus purus.
         </p>
-        <Link to={`/Contact`} className={className.button}>
-            Contact Us
+        <Link
+          to={`/Contact`}
+          className={className.button}
+        >
+          Contact Us
         </Link>
       </div>
     );

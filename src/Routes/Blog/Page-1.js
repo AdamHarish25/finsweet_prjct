@@ -32,7 +32,10 @@ const BlogP_1 = () => {
           spectator on a hillside.
         </p>
 
-        <Link to={`page6`} className={className.link}>
+        <Link
+          to={`page6`}
+          className={className.link}
+        >
           Read more
         </Link>
       </div>

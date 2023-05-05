@@ -32,7 +32,12 @@ const WorkP_1 = () => {
         <ul className={className.listBox}>
           {Data.map((data, index) => (
             <li key={index}>
-              <Link className={className.link} to={data.link}>{data.icon}</Link>
+              <Link
+                className={className.link}
+                to={data.link}
+              >
+                {data.icon}
+              </Link>
             </li>
           ))}
         </ul>

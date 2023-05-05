@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { DataStorage } from "../../Datas/DataStorage";
+import { RefreshPage } from "../../Components/RefreshPage";
 
 
 const PricingP_1 = () => {
@@ -62,12 +63,17 @@ const PricingP_1 = () => {
                               key={idx}
                               className={`flex items-center gap-2 ${item.visibility}`}
                             >
-                              <img src={item.icon} alt="icon" className="w-3"/> <p>{item.title}</p>
+                              <img src={item.icon} alt="icon" className="w-3" />{" "}
+                              <p>{item.title}</p>
                             </li>
                           ))}
                         </ul>
-                        <Link className={`block text-center py-3 ${data.buttonColor} rounded-xl`} to={data.buttonLink}>
-                            {data.buttonText}
+                        <Link
+                          onClick={() => RefreshPage()}
+                          className={`block text-center py-3 ${data.buttonColor} rounded-xl`}
+                          to={data.buttonLink}
+                        >
+                          {data.buttonText}
                         </Link>
                       </div>
                     );

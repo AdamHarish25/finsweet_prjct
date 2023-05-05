@@ -17,7 +17,8 @@ const FeatureP_1 = () => {
        <div className={classname.container}>
          <div className={classname.greetings}>
            <strong className={classname.title}>
-             All the features <br/>you need
+             All the features <br />
+             you need
            </strong>
            <p>
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
@@ -25,10 +26,12 @@ const FeatureP_1 = () => {
              eiusmod tempor incididunt.
            </p>
            <div className={classname.buttonBox}>
-             <Link to="/Pricing" className={classname.link1}>
+             <Link
+               to="/Pricing"
+               className={classname.link1}
+             >
                View Pricing
              </Link>
-            
            </div>
          </div>
 

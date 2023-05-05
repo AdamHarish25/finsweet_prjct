@@ -13,15 +13,23 @@ const BottomBar = () => {
 
     return (
       <div className={className.container}>
-        <div className='w-full px-20 font-medium'>
+        <div className="w-full px-20 font-medium">
           <h1>Copyright 2022, Finsweet.com</h1>
         </div>
         <div className={className.menuBox}>
-            {Data.map((data, index) => (
-                <Link to={data.link} key={index} className={`${className.link} ${window.location.pathname === data.link ? "font-medium" : "font-normal"}`}>
-                    {data.title}
-                </Link>
-            ))}
+          {Data.map((data, index) => (
+            <Link
+              to={data.link}
+              key={index}
+              className={`${className.link} ${
+                window.location.pathname === data.link
+                  ? "font-medium"
+                  : "font-normal"
+              }`}
+            >
+              {data.title}
+            </Link>
+          ))}
         </div>
       </div>
     );

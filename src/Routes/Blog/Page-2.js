@@ -22,33 +22,32 @@ const BlogP_2 = () => {
     var Data = DataStorage.blog;
 
     return (
-        <div className={className.container}>
-            <h1 className={className.title}>
-                Our Blog
-            </h1>
+      <div className={className.container}>
+        <h1 className={className.title}>Our Blog</h1>
 
-            <div className={className.cardBox}>
-                {Data.map((data, index) => (
-                    <div className={className.card} key={index}>
-                        <img src={data.img} alt="Random generated img" className={className.cardImg}/>
-                        <p className={className.dateStamp}>
-                            {data.date}
-                        </p>
-                        <h1 className={className.cardTitle}>
-                            {data.title}
-                        </h1>
-                        <p className={className.cardSubtitle}>
-                            {data.subtitle}
-                        </p>
+        <div className={className.cardBox}>
+          {Data.map((data, index) => (
+            <div className={className.card} key={index}>
+              <img
+                src={data.img}
+                alt="Random generated img"
+                className={className.cardImg}
+              />
+              <p className={className.dateStamp}>{data.date}</p>
+              <h1 className={className.cardTitle}>{data.title}</h1>
+              <p className={className.cardSubtitle}>{data.subtitle}</p>
 
-                        <Link to={`page${data.id}`} className={className.cardLink}>
-                            Read More <FaArrowRight/>
-                        </Link>
-                    </div>
-                ))}
+              <Link
+                to={`page${data.id}`}
+                className={className.cardLink}
+              >
+                Read More <FaArrowRight />
+              </Link>
             </div>
+          ))}
         </div>
-    )
+      </div>
+    );
 }
 
 export default BlogP_2;

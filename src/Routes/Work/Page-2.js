@@ -46,20 +46,22 @@ const WorkP_2 = () => {
         </ul>
 
         <div className={className.cardBox}>
-            {(filtered === "" ? Data2 : Data2.filter(({tag}) => tag === filtered )).map((data, index) => (
-                <div key={index} className={className.portfolioCard}>
-                    <img src={data.img} alt={data.title}/>
-                    <h1 className={className.cardTitle}>
-                        {data.title}
-                    </h1>
-                    <p>
-                        {data.subtitle}
-                    </p>
-                    <Link to={`page${data.id}`} className={className.cardButton}>
-                        {data.buttonText} <FaArrowRight />
-                    </Link>
-                </div>
-            ))}
+          {(filtered === ""
+            ? Data2
+            : Data2.filter(({ tag }) => tag === filtered)
+          ).map((data, index) => (
+            <div key={index} className={className.portfolioCard}>
+              <img src={data.img} alt={data.title} />
+              <h1 className={className.cardTitle}>{data.title}</h1>
+              <p>{data.subtitle}</p>
+              <Link
+                to={`page${data.id}`}
+                className={className.cardButton}
+              >
+                {data.buttonText} <FaArrowRight />
+              </Link>
+            </div>
+          ))}
         </div>
 
       </div>
