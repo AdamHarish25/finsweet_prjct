@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { DataStorage } from "../../Datas/DataStorage";
-import { RefreshPage } from "../../Components/RefreshPage";
 
 
 const PricingP_1 = () => {
@@ -69,7 +68,6 @@ const PricingP_1 = () => {
                           ))}
                         </ul>
                         <Link
-                          onClick={() => RefreshPage()}
                           className={`block text-center py-3 ${data.buttonColor} rounded-xl`}
                           to={data.buttonLink}
                         >
