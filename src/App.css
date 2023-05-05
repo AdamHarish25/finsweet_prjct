@@ -1650,6 +1650,10 @@ video {
 }
 
 @media (min-width: 1025px){
+  .lg\:grid{
+    display: grid !important;
+  }
+
   .lg\:w-60{
     width: 15rem !important;
   }
@@ -1660,6 +1664,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:flex{
+    display: flex !important;
+  }
+
   .xl\:w-auto{
     width: auto !important;
   }
@@ -1674,8 +1682,20 @@ video {
 }
 
 @media (min-width: 1806px){
+  .\32xl\:flex{
+    display: flex !important;
+  }
+
   .\32xl\:w-\[500px\]{
     width: 500px !important;
+  }
+
+  .\32xl\:gap-\[650px\]{
+    gap: 650px !important;
+  }
+
+  .\32xl\:gap-\[750px\]{
+    gap: 750px !important;
   }
 
   .\32xl\:px-28{
