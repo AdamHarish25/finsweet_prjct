@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css"; // Import CSS file for carousel styles
+import "./Carousel.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Carousel = ({ items, interval = 5000 }) => {
