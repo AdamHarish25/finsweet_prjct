@@ -45,7 +45,7 @@ const Footer = () => {
           </p>
           <div className='flex items-center gap-5'>
             {Data.map((data, index) => (
-              <Link className={className.link} to={data.link} key={index}>
+              <Link target='_blank' className={className.link} to={data.link} key={index}>
                 {data.icon}
               </Link>
             ))}

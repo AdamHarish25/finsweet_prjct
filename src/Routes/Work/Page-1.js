@@ -17,7 +17,6 @@ const WorkP_1 = () => {
 
     return (
       <div className={className.container}>
-        
         <div className={className.headerBox}>
           <p>What we created</p>
           <h1 className={className.title}>Our Work Portfolio</h1>
@@ -32,16 +31,12 @@ const WorkP_1 = () => {
         <ul className={className.listBox}>
           {Data.map((data, index) => (
             <li key={index}>
-              <Link
-                className={className.link}
-                to={data.link}
-              >
+              <Link target="_blank" className={className.link} to={data.link}>
                 {data.icon}
               </Link>
             </li>
           ))}
         </ul>
-
       </div>
     );
 
